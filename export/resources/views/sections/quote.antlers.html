@@ -1,0 +1,13 @@
+<section class="shell section-space">{{ partial:partials/section-title }}<div class="grid gap-12 lg:grid-cols-[1fr_2fr]">
+<aside><p class="eyebrow mb-6">Contact details</p><a class="text-xl underline underline-offset-4" href="mailto:{{ brand:email | sanitize }}">{{ brand:email | sanitize }}</a><p class="mt-6 whitespace-pre-line text-muted">{{ brand:address | sanitize }}</p></aside>
+<div>{{ form:quote }}
+{{ if success }}<div class="border-l-4 border-signal bg-mist p-8" role="status"><h3 class="text-2xl">Your request has been received.</h3><p class="mt-3">Thank you for sharing the details. Our team will review your request.</p></div>
+{{ else }}
+{{ if errors }}<div class="mb-8 border-l-4 border-red-700 bg-red-50 p-5" role="alert"><p class="font-semibold">Please check your details.</p><ul class="mt-2 list-inside list-disc">{{ errors }}<li>{{ value | sanitize }}</li>{{ /errors }}</ul></div>{{ /if }}
+<div class="grid gap-x-6 gap-y-7 sm:grid-cols-2">{{ fields }}<div class="{{ if handle == 'message' }}sm:col-span-2{{ /if }}"><label class="mb-2 block text-sm" for="quote-{{ handle }}">{{ display | sanitize }}{{ if handle == 'name' || handle == 'email' || handle == 'message' }} <span aria-hidden="true">*</span>{{ /if }}</label>
+{{ if type == 'textarea' }}<textarea id="quote-{{ handle }}" name="{{ handle }}" rows="5" required minlength="10" maxlength="5000" class="form-input" {{ if error }}aria-invalid="true" aria-describedby="quote-{{ handle }}-error"{{ /if }}>{{ old | sanitize }}</textarea>
+{{ else }}<input id="quote-{{ handle }}" name="{{ handle }}" type="{{ input_type ?? 'text' }}" value="{{ old | sanitize }}" class="form-input" {{ if handle == 'name' || handle == 'email' }}required{{ /if }} maxlength="254" {{ if autocomplete }}autocomplete="{{ autocomplete }}"{{ /if }} {{ if error }}aria-invalid="true" aria-describedby="quote-{{ handle }}-error"{{ /if }}>{{ /if }}
+{{ if error }}<p class="mt-2 text-sm text-red-700" id="quote-{{ handle }}-error">{{ error | sanitize }}</p>{{ /if }}</div>{{ /fields }}</div>
+<div class="hidden" aria-hidden="true"><label for="quote-website">Leave this empty</label><input id="quote-website" type="text" name="{{ honeypot }}" tabindex="-1" autocomplete="off"></div>
+<button class="button button-dark mt-8" type="submit">Send quote request <span aria-hidden="true">↗</span></button>{{ /if }}
+{{ /form:quote }}</div></div></section>

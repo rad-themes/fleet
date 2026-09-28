@@ -1,0 +1,8 @@
+title: Services
+template: detail
+layout: layout
+revisions: false
+route: '{mount}/{slug}'
+mount: 90926afe-651f-55ed-ab05-32c10b4b4d4e
+sort_dir: asc
+date: false

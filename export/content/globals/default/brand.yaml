@@ -1,0 +1,11 @@
+name: Fleet
+tagline: 'Independent thinking. Global reach.'
+email: hello@example.com
+address: "123 Example Street\nLos Angeles, CA"
+footer_text: 'A considered approach to a connected world.'
+cta_heading: "Your next move\nstarts here."
+cta_label: 'Start a conversation'
+cta_link: 'entry::4805124a-0e3c-5b44-b13f-c471088f27f1'
+support_label: 'Rad Themes'
+support_url: 'https://statamic.com/creators/rad-themes'
+copyright: 'Fleet. All rights reserved.'
