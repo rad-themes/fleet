@@ -1,8 +1,10 @@
 # Fleet for Statamic
 
-Fleet is a logistics and freight starter kit by [Rad Themes](https://statamic.com/creators/rad-themes). It uses native Statamic collections, Antlers, and Tailwind CSS 4. All imagery is bundled locally. No Webflow runtime or paid addon is required.
+Fleet is an editable logistics and freight website starter kit by [Rad Themes](https://statamic.com/creators/rad-themes). It uses native Statamic collections, Antlers, and Tailwind CSS 4. All imagery is bundled locally. No Webflow runtime or paid addon is required.
 
-This is a development preview. A Statamic Marketplace release and hosted demonstration are not available yet.
+![Fleet homepage preview](preview-desktop.png)
+
+Create a transportation business site with a service catalogue, newsroom, careers board, and quote requests. Page sections and content are managed in Statamic's Control Panel, so the supplied copy, imagery, and page order can be changed without editing templates.
 
 ## Included
 
@@ -20,11 +22,11 @@ This is a development preview. A Statamic Marketplace release and hosted demonst
 
 Compiled frontend assets are included. Statamic licensing is separate from this kit; see [Statamic pricing](https://statamic.com/pricing) for Core and Pro features.
 
-## Installation for repository collaborators
+## Installation
 
 Start with a **new** Statamic project. Installing a starter kit copies content and configuration into that project; do not install it into an established site without a backup and a merge plan.
 
-Clone this private repository somewhere outside the new project, then register its path in the new project's Composer configuration:
+When the kit is available through the Statamic Marketplace, install it with the package name `rad-themes/statamic-fleet`. Repository collaborators can clone the source outside a fresh project and register its local path in Composer:
 
 ```sh
 composer config repositories.fleet path /absolute/path/to/statamic-fleet
@@ -36,7 +38,7 @@ npm run build
 php artisan serve
 ```
 
-Use your own local checkout path. Composer access to the private repository is required for collaborators. Marketplace installation instructions will be added when the paid product is released.
+Use your own local checkout path. Composer access to the repository is required for collaborators. A buyer's Marketplace installation follows the instructions supplied with their purchase.
 
 The kit installs its asset disk configuration in `config/filesystems.php`, a Vite configuration, npm dependencies, and sample content. It includes no accounts, passwords, `.env` file, application key, or form submissions.
 
@@ -71,4 +73,4 @@ The tests cover the supplied routes, native form fields, invalid input, stored r
 
 Fleet adapts the authorized Fleet source design by **Flowit Supply** into native Statamic content models and new Antlers/Tailwind templates. See [CREDITS.md](CREDITS.md) for source provenance. Demo articles and role descriptions are sample content.
 
-For repository development issues, use [GitHub Issues](https://github.com/rad-themes/statamic-fleet/issues). Marketplace buyer support information will be provided with the release.
+For repository development issues, use [GitHub Issues](https://github.com/rad-themes/statamic-fleet/issues).
