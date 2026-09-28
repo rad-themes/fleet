@@ -66,9 +66,3 @@ npm run build
 ```
 
 The tests cover the supplied routes, native form fields, invalid input, stored requests, the honeypot, brand globals, and the 404 page.
-
-## Credits and support
-
-Fleet adapts the authorized Fleet source design by **Flowit Supply** into native Statamic content models and new Antlers/Tailwind templates. See [CREDITS.md](https://github.com/rad-themes/statamic-fleet/blob/codex/fleet-starter-kit/CREDITS.md) for source provenance. Demo articles and role descriptions are sample content.
-
-For repository development issues, use [GitHub Issues](https://github.com/rad-themes/statamic-fleet/issues).
