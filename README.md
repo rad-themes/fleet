@@ -2,8 +2,6 @@
 
 Fleet is an editable logistics and freight website starter kit by [Rad Themes](https://statamic.com/creators/rad-themes). It uses native Statamic collections, Antlers, and Tailwind CSS 4. All imagery is bundled locally. No Webflow runtime or paid addon is required.
 
-![Fleet homepage preview](preview-desktop.png)
-
 Create a transportation business site with a service catalogue, newsroom, careers board, and quote requests. Page sections and content are managed in Statamic's Control Panel, so the supplied copy, imagery, and page order can be changed without editing templates.
 
 ## Included
@@ -71,6 +69,6 @@ The tests cover the supplied routes, native form fields, invalid input, stored r
 
 ## Credits and support
 
-Fleet adapts the authorized Fleet source design by **Flowit Supply** into native Statamic content models and new Antlers/Tailwind templates. See [CREDITS.md](CREDITS.md) for source provenance. Demo articles and role descriptions are sample content.
+Fleet adapts the authorized Fleet source design by **Flowit Supply** into native Statamic content models and new Antlers/Tailwind templates. See [CREDITS.md](https://github.com/rad-themes/statamic-fleet/blob/codex/fleet-starter-kit/CREDITS.md) for source provenance. Demo articles and role descriptions are sample content.
 
 For repository development issues, use [GitHub Issues](https://github.com/rad-themes/statamic-fleet/issues).
