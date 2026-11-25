@@ -24,11 +24,11 @@ Compiled frontend assets are included. Statamic licensing is separate from this 
 
 Start with a **new** Statamic project. Installing a starter kit copies content and configuration into that project; do not install it into an established site without a backup and a merge plan.
 
-When the kit is available through the Statamic Marketplace, install it with the package name `rad-themes/statamic-fleet`. Repository collaborators can clone the source outside a fresh project and register its local path in Composer:
+When the kit is available through the Statamic Marketplace, install it with the package name `rad-themes/fleet`. Repository collaborators can clone the source outside a fresh project and register its local path in Composer:
 
 ```sh
-composer config repositories.fleet path /absolute/path/to/statamic-fleet
-php please starter-kit:install rad-themes/statamic-fleet --local --without-user --clear-site
+composer config repositories.fleet path /absolute/path/to/fleet
+php please starter-kit:install rad-themes/fleet --local --without-user --clear-site
 php please make:user
 php please stache:refresh
 npm ci

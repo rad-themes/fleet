@@ -1,11 +1,11 @@
 {
-    "name": "rad-themes/statamic-fleet",
+    "name": "rad-themes/fleet",
     "description": "An editable logistics and freight starter kit for Statamic by Rad Themes.",
     "type": "statamic-starter-kit",
     "license": "proprietary",
     "keywords": ["statamic", "starter-kit", "logistics", "tailwindcss"],
     "authors": [{"name": "Rad Themes", "homepage": "https://statamic.com/creators/rad-themes"}],
-    "support": {"issues": "https://github.com/rad-themes/statamic-fleet/issues"},
+    "support": {"issues": "https://github.com/rad-themes/fleet/issues"},
     "require": {"php": "^8.3", "statamic/cms": "^6.34"},
     "extra": {
         "statamic": {
